@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="finish" sid="2899870101262139" static="0" type="number">0</variable>
+        <variable constant="0" name="finish2" sid="6354561199730681" static="0" type="number">0</variable>
+        <event-block sid="3962261640006545">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6303293917164366" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="8597382248128794" type="Sprite">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5233403337231618">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9390048801321959" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="6577708838394834" type="Sprite">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3426116193513483">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6737525055601165" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="8741212268727456" type="Sprite">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9553907456707696">
+            <conditions>
+                <condition id="2" name="Key is down" sid="4400862080077313" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="2484180916844233" type="Sprite">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5660076816987339">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1217680142978489" type="Sprite">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="6102872237450831" type="Sprite">
+                    <param id="0" name="Object">Sprite6</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6520247459725233">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7211738016373749" type="Sprite2">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="2353933238580595" type="Sprite2">
+                    <param id="0" name="Object">Sprite5</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2992863510732637">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="458692812729298" type="Sprite">
+                    <param id="0" name="Object">TiledBackground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="5521291247455163" type="System">
+                    <param id="0" name="Variable">finish</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9948841632854839" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1024910561670621">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8583628273829942" type="Sprite2">
+                    <param id="0" name="Object">TiledBackground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="7254397523277894" type="System">
+                    <param id="0" name="Variable">finish2</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="8200556272109589" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
